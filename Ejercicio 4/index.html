@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formulario en HTML</h1>
+
+    <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+      Ingrese usuario :
+      <input type="text" name="Nombre" required maxlength="45" />
+      <br />
+      <i>El mismo puede contener hasta 45 caracteres</i>
+
+      <br /><br />
+
+      Ingrese contraseña : <input type="password" name="Clave" value="" />
+
+      <br /><br />
+
+      <input
+        type="button"
+        name="Alerta"
+        value="mostrar alerta"
+        onclick="alert('Alerta!!!')"
+      />
+
+      <br /><br />
+
+      Seleccione pais de origen:
+      <br />
+      <input type="radio" name="nacionalidad" value="argentina" checked />
+      Argentina
+      <br />
+      <input type="radio" name="nacionalidad" value="uruguay" /> Uruguay
+      <br />
+      <input type="radio" name="nacionalidad" value="chile" /> Chile
+      <br />
+      <input type="radio" name="nacionalidad" value="otro" /> Otro <br /><br />
+
+      Seleccione idiomas aprendidos:
+      <br />
+      <input type="checkbox" name="idioma1" value="ingles" checked />
+      Ingles<br />
+      <input type="checkbox" name="idioma2" value="portugues" /> Portugues<br />
+      <input type="checkbox" name="idioma3" value="italiano" /> Italiano<br />
+      <input type="checkbox" name="idioma4" value="latin" /> Latin<br />
+
+      <br />
+      Observaciones: <br />
+      <textarea
+        name="observaciones"
+        cols="30"
+        rows="4"
+        placeholder="Ingrese su observacion"
+      ></textarea>
+      <br />
+
+      <br />
+      Seleccione su comida:
+      <select name="menu">
+        <option value="lomito">Lomito</option>
+        <option value="pizza">Pizza</option>
+        <option value="empanadas">Empanadas</option>
+        <option value="" selected>(Sin seleci&oacute;n)</option>
+      </select>
+      <br /><br /><br />
+
+      <input type="submit" name="Enviar" value="enviar datos" />
+    </form>
+  </body>
+</html>
